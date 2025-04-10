@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janice Hixon - Portfolio</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Pixelify Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            background-image: url('background.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.5s ease-in-out;
+        }
+
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .button-container {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .home-button {
+            position:fixed;
+            bottom: 25%;
+            left: 10%;
+            padding: 4px;
+        }
+
+        .about-button {
+            position: fixed;
+            top: 22%;
+            left: 25%;
+            padding: 4px;
+        }
+
+        .lab-button {
+            position: fixed;
+            bottom: 12%;
+            right: 33%;
+            padding: 4px;
+        }
+
+        .school-button {
+            position: fixed;
+            top: -5%;
+            right: 15%;
+            padding: 4px;
+        }
+
+        .about-button:hover img,
+        .lab-button:hover img,
+        .school-button:hover img {
+            transform: scale(1.1);
+            transition: transform 0.2s;
+        }
+
+        .hover-text {
+            display: none;
+            color: rgb(74, 134, 219);
+            font-size: 18px;
+            background: rgba(217, 255, 179, 0.8);
+            padding: 4px 8px;
+            border-radius: 8px;
+            margin-top: 10px;
+            white-space: nowrap;
+        }
+
+        .button-container:hover .hover-text {
+            display: block;
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="button-container home-button">
+        <button onclick="changeBackground()">
+            <img src="sign.svg" alt="Homepage of Janice Hixon" width="150" height="150">
+        </button>
+    </div>
+    <div class="button-container about-button">
+        <button onclick="location.href='about.html'">
+          <img src="postoffice.svg" alt="Contact Info" width="180" height="180">
+        </button>
+        <div class="hover-text">About and Contact Info</div>
+      </div>
+    
+      <div class="button-container school-button">
+        <button onclick="location.href='school.html'">
+          <img src="uchicago.svg" alt="School Projects" width="350" height="350">
+        </button>
+        <div class="hover-text">School Projects</div>
+      </div>
+    
+      <div class="button-container lab-button">
+        <button onclick="location.href='lab.html'">
+          <img src="lab.svg" alt="Publications" width="300" height="300">
+        </button>
+        <div class="hover-text">Publications</div>
+      </div>
+
+    <script>
+        let dark = false;
+        function changeBackground() {
+            console.log("hello");
+            if (dark) {
+                console.log(1);
+                document.body.style.backgroundImage = "url('background.svg')";
+                dark = false;
+            } else {
+                console.log(2);
+                document.body.style.backgroundImage = "url('backgroundDark.svg')";
+                dark = true;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janice Hixon - School Projects</title>
+    <style>
+        body {
+            font-family: "Pixelify Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #EBE1DC;
+        }
+
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .button-container {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .home-button {
+            position:fixed;
+            top: 0%;
+            left: 0%;
+            padding: 10px;
+        }
+
+        .home-button:hover img {
+            transform: scale(1.1);
+            transition: transform 0.2s;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            gap: 20px;
+            width: 100%;
+            max-width: 90%;
+        }
+
+        .grid-box {
+            background-color: #150055;
+            border: 4px solid #C8B7AE;
+            border-radius: 8px;
+            padding: 5px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .grid-box .title {
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #DF5E3A;;
+            text-align: left;
+            margin-bottom: 0px;
+            margin-top: 5px;
+        }
+
+        .grid-box .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .grid-box img {
+            height: 150px;
+            width: auto;
+            object-fit: cover;
+            margin-right: 10px;
+            margin-left: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .grid-box p {
+            font-size: 16px;
+            color: #EBE1DC;
+            margin-right: 10px;
+        }
+
+        .grid-box a {
+            font-size: 16px;
+            color: #DF5E3A;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            margin-top: 0px;
+            color: #C8B7AE;
+            font-size: 48px;
+            text-align: center;
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<h1> School Projects </h1>
+<body>
+    <div class="button-container home-button">
+        <button onclick="location.href='index.html'">
+            <img src="sign.svg" alt="Homepage of Janice Hixon" width="100" height="100">
+        </button>
+    </div>
+    <div class="grid-container">
+        <div class="grid-box">
+            <div class="title">RochamBEAU</div>
+            <div class="content">
+                <img src="images/rps.png" alt="Image of the Hand Model">
+                <p>	3D printed hand actuated using three strings and one servo motor that
+                    plays Rock Paper Scissors with a user wearing a glove with flex sensors
+                    sewn into the index and ring finger. Project for CMSC 20380 (Actuated
+                    User Interfaces and Technology) at UChicago, 2025.
+                    <a href="https://youtu.be/m7EjNYRBjmk" target="_blank">Video on Youtube</a>
+                </p>
+            </div>
+        </div>
+        <div class="grid-box">
+            <div class="title">Actuated Exoplanet Orrery</div>
+            <div class="content">
+                <img src="images/orrery.png" alt="Image of the Orrery">
+                <p> Actuated and interactive orrery made using Toio robots to physicalize
+                    exoplanetary systems. Group Project with Jun Asano, Dillon Bass, and
+                    Holly Wei, for CMSC 20380 (Actuated User Interfaces and
+                    Technology) at UChicago, 2025.
+                    <a href="https://youtu.be/WFTxbECik7U?si=ALHryyaJL4zGbhji" target="_blank">Video on Youtube</a>
+                </p>
+            </div>
+        </div>
+        <div class="grid-box">
+            <div class="title">Anti-Soap Dispenser</div>
+            <div class="content">
+                <img src="images/dispenser.png" alt="Image of the Dispenser">
+                <p> Device that prevents users from getting more soap within 20 seconds of
+                    the previous time they got some, and uses a light to inform the user that
+                    they've washed their hands within the last 10 minutes. Designed with those
+                    with Obsessive Compulsive Disorder in mind. Project for CMSC 20380
+                    (Actuated User Interfaces and Technology) at UChicago, 2025.
+                    <a href="https://youtu.be/5ZhzsPlwhAg" target="_blank">Video on Youtube</a>
+                </p>
+            </div>
+        </div>
+        <div class="grid-box">
+            <div class="title">Letterboxd Notification Device</div>
+            <div class="content">
+                <img src="images/letterboxd.png" alt="Image of the Letterboxd Notification Device">
+                <p> Device shaped like a mailbox and a clapperboard whose clapper stick
+                    raises when someone you follow logs a movie on letterboxd. Assignment for
+                    CMSC 20380 (Actuated User Interfaces and Technology) at UChicago, 2025.
+                    <a href="https://youtu.be/zv5xGfamAgw" target="_blank">Video on Youtube</a>
+                </p>
+            </div>
+        </div>
+        <div class="grid-box">
+            <div class="title">Shadows of Greece's Past</div>
+            <div class="content">
+                <img src="images/shadows.png" alt="Image of the Shapes that Make up the Shadows of Greece's Past">
+                <p> 3D model in Blender where a wall is built so that with each layer, a new
+                    shadow is cast that builds off of the previous one. Assignment for SOSC 
+                    19009 (Greek Antiquity and its Legacy-III) at UChicago, 2024.
+                    <a href="https://docs.google.com/presentation/d/1cxVWV4TS71gwdKV3RXmKHn-zhXMhZqtuKIbOySTf31A/edit?usp=sharing" target="_blank">Link to Google Slides</a>
+                </p>
+            </div>
+        </div>
+        <div class="grid-box">
+            <div class="title">Sprout Journal</div>
+            <div class="content">
+            <img src="images/sprout.png" alt="Image of the Sprout Journal">
+            <p>	Prototype for an app designed to improve college students' mental health
+                through journaling. Group project with Thuc Dzu, Quinn Thompson, Mai Vu,
+                and Emily Zen for CMSC 20370 (Inclusive Technology: Designing for
+                Underserved and Marginalized Populations), at UChicago, 2024.
+                <a href="https://youtu.be/EH1szMTt34Y" target="_blank">Video on Youtube</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
